@@ -1,0 +1,313 @@
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: darkslategray;
+    }
+
+    h1 {
+      margin-top: 1.65em;
+      text-align: center;
+    }
+
+@media screen and (min-width: 320px) {
+    
+      .searchbar {
+        margin-top: 1em; 
+        margin-left: 2.5em;
+        width: 70%; 
+      }
+
+      .searchbar #searchbtn {
+        position: absolute;
+        width: auto;
+        height: auto;
+        padding: 6px 10px;
+        background: #ddd;
+        font-size: 22px;
+        margin-left: 0.5em;
+        margin-top: 0.3em;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+  
+      
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        
+      }
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav #search {
+          margin-left: 1.5em;
+      }
+
+      .topnav #user {
+          margin-left: 70%;
+      }   
+
+    
+      
+      /* Style the topnav links */
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: darkgray;
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+      }
+
+      
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: darkgray;
+        color: black;
+      }
+
+      /* Style the menu links */
+      .menu a {
+        display: inline-block;
+        color: blueviolet;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 2em;
+    }
+
+    .menu #desktop {
+      display: none;
+    }
+
+
+     .menu {
+       display: none; 
+       background-color: black;
+       
+     }
+
+      
+      /* Style the content */
+      .content {
+        background-color: #ddd;
+        padding: 10px;
+        height: 200px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Style the footer */
+      .footer {
+        background-color: blue;
+        padding: 10px;
+      }
+
+      /* Styles for index card */ 
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+      }
+      
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+      
+
+      
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      button:hover, a:hover {
+        opacity: 0.7;
+      }    
+
+       /* Styles for restaurant card */ 
+
+       .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        max-height: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: serif;
+        font-size: 0.60em;
+      }
+      
+      .price {
+        color: rgb(102, 86, 86);
+        font-size: 22px;
+      }
+      
+  
+      
+      /* Styles for login page */ 
+
+      /* Add padding to container elements */
+       .container {
+        position: relative;
+        border-radius: 5px;
+        padding: 20px 0 30px 0;
+        margin-top: 4em;
+        margin-left: 2em;
+        margin-right: 2em;
+        background-color: darkgrey;
+           
+        }
+
+      /* Clear floats */
+       .clearfix::after {
+          content: "";
+          clear: both;
+         display: table;
+        }
+
+/* style inputs and link buttons */
+    input,
+      .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none; /* remove underline from anchors */
+      }
+
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+       }
+
+       /* Set a style for all buttons */
+      button {
+        background-color: black;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        
+      } 
+      .flex {
+        display: none;
+      }
+
+  }
+
+
+  @media only screen and (min-width : 768px) {
+    /* Styles */
+
+    .searchbar #searchbtn {
+      position: absolute;
+      width: auto;
+      height: auto;
+      padding: 6px 10px;
+      background: #ddd;
+      font-size: 22px;
+      margin-left: 0.5em;
+      margin-top: 0.3em;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .topnav {
+      display: none; 
+    }
+
+    .searchbar {      
+      display: block;
+      padding-left: 5em;
+      padding-right: 25em; 
+      margin-top: 1em;
+      margin-left: 13em;
+      height: auto;
+      width: 90%;
+    }
+
+    .menu {
+      display: block;
+      width: 100%;
+    }
+
+   .menu a {
+      margin-left: 15em;
+    }
+
+
+
+    /* Styles for restaurant card */ 
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: serif;
+      font-size: 0.60em;
+    }
+
+   /* Styles for index card */ 
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+    }
+
+  /* Float four columns side by side */
+   .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+     
+    }
+
+  /* Remove extra left and right margins, due to padding in columns */
+   .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;      
+      align-items: flex-start;
+      position: absolute;
+    }  
+
+
+
+  }

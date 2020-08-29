@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cityCenter</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+
+
+  <div class="topnav">
+  
+    <nav id="myLinks">
+      <a href="index.html">Home</a>      
+      <a href="categories.html">Categories</a>
+      <a href="publicServices.html">Public Services</a>
+     </nav>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      
+    </a>
+  </div>
+  
+  <div class="searchbar">
+    <form id="form">     
+     <input type="text" id="placesName" placeholder="What are you looking for search by name or category..." required> 
+     <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
+   </form>
+  </div>
+
+</br> 
+
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="categories.html" >Categories</a> 
+    <a href="publicServices.html">Public Services</a>          
+  </div>
+
+</br>
+
+  <section class="flex-container">      
+    <ol id="results-list">
+    </ol>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>
