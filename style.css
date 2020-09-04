@@ -16,7 +16,10 @@
     }
 
 @media screen and (min-width: 320px) {
-    
+    .flex-container{
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
       .searchbar {
         margin-top: 1em; 
         margin-left: 2.5em;
@@ -238,6 +241,10 @@
       cursor: pointer;
     }
 
+    .searchbar > input {
+      width: 80%;
+    }
+
     .topnav {
       display: none; 
     }
@@ -254,11 +261,12 @@
 
     .menu {
       display: block;
-      width: 100%;
+      width: 100vh;
     }
 
    .menu a {
-      margin-left: 15em;
+      margin-left: 5em;
+      
     }
 
 
@@ -278,16 +286,17 @@
 
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      max-width: 300px;
+      max-width: 80%;
+      height: auto;
+      object-fit: contain;
       margin: auto;
       text-align: center;
     }
 
-  /* Float four columns side by side */
+  /* Float columns side by side */
    .column {
       float: left;
-      width: 25%;
-      padding: 0 10px;
+      width: 33.3%;     
      
     }
 
@@ -297,7 +306,7 @@
   /* Clear floats after the columns */
    .row:after {
      content: "";
-     display: table;
+     display: flex;
      clear: both;
     }
 
@@ -308,6 +317,149 @@
       position: absolute;
     }  
 
+    .flex-container > p {
+      margin-left: 10px;
+      margin-right: 5px;
+    }
 
+    #results-list {
+      display: flex;
+      align-items: start;
+      flex-wrap: wrap;
+      
+
+    }
+
+    #results {
+      display: flex;
+      justify-content: start;
+      flex-flow: wrap;
+      
+    }
+
+    #public-results {
+      display: flex;
+      justify-content: start;
+      flex-flow: wrap;
+      
+    }
+
+
+
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .searchbar #searchbtn {
+      position: absolute;
+      width: auto;
+      height: auto;
+      padding: 6px 10px;
+      background: #ddd;
+      font-size: 22px;
+      margin-left: 0.5em;
+      margin-top: 0.3em;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .topnav {
+      display: none; 
+    }
+
+    .searchbar {      
+      display: block;
+      padding-left: 5em;
+      padding-right: 25em; 
+      margin-top: 1em;
+      margin-left: 13em;
+      height: auto;
+      width: 90%;
+    }
+
+    .menu {
+      display: flex;
+      width: 100%;
+    }
+
+   .menu a {
+      margin-left: 12em;
+      max-width: 1500px;
+    }
+
+
+
+    /* Styles for restaurant card */ 
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: serif;
+      font-size: 0.60em;
+    }
+
+   /* Styles for index card */ 
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 80%;
+      height: auto;
+      object-fit: contain;
+      margin: auto;
+      text-align: center;
+    }
+
+  /* Float columns side by side */
+   .column {
+      float: left;
+      width: 33.3%;     
+     
+    }
+
+  /* Remove extra left and right margins, due to padding in columns */
+   .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+   .row:after {
+     content: "";
+     display: flex;
+     clear: both;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;      
+      align-items: flex-start;
+      position: absolute;
+    }  
+
+    .flex-container > p {
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+
+    #results-list {
+      display: flex;
+      align-items: start;
+      flex-wrap: wrap;
+      
+
+    }
+
+    #results {
+      display: flex;
+      justify-content: start;
+      flex-flow: wrap;
+      
+    }
+
+    #public-results {
+      display: flex;
+      justify-content: start;
+      flex-flow: wrap;
+      
+    }
 
   }
