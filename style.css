@@ -16,9 +16,12 @@
     }
 
 @media screen and (min-width: 320px) {
-    .flex-container{
-      margin-left: 1.5em;
-      margin-right: 1.5em;
+
+
+    .container > h3 {
+      margin-top: -4em;
+      margin-left: 10px;
+      margin-right: 5px;
     }
       .searchbar {
         margin-top: 1em; 
@@ -90,35 +93,18 @@
         color: blueviolet;
         text-align: center;
         padding: 14px 16px;
-        text-decoration: none;
+        text-decoration: underline;
         font-size: 18px;
         margin-left: 2em;
-    }
-
-    .menu #desktop {
-      display: none;
-    }
+    } 
 
 
      .menu {
        display: none; 
        background-color: black;
        
-     }
+     }           
 
-      
-      /* Style the content */
-      .content {
-        background-color: #ddd;
-        padding: 10px;
-        height: 200px; /* Should be removed. Only for demonstration */
-      }
-      
-      /* Style the footer */
-      .footer {
-        background-color: blue;
-        padding: 10px;
-      }
 
       /* Styles for index card */ 
 
@@ -156,26 +142,19 @@
         text-align: center;
         font-family: serif;
         font-size: 0.60em;
-      }
-      
-      .price {
-        color: rgb(102, 86, 86);
-        font-size: 22px;
-      }
-      
-  
-      
-      /* Styles for login page */ 
+      }   
+       
+           
 
       /* Add padding to container elements */
        .container {
         position: relative;
         border-radius: 5px;
         padding: 20px 0 30px 0;
-        margin-top: 4em;
-        margin-left: 2em;
-        margin-right: 2em;
-        background-color: darkgrey;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        background-color: darkslategray;;
            
         }
 
@@ -218,9 +197,7 @@
         opacity: 0.9;
         
       } 
-      .flex {
-        display: none;
-      }
+     
 
   }
 
@@ -242,7 +219,7 @@
     }
 
     .searchbar > input {
-      width: 80%;
+      width: 80vw;
     }
 
     .topnav {
@@ -250,23 +227,25 @@
     }
 
     .searchbar {      
-      display: block;
-      padding-left: 5em;
-      padding-right: 25em; 
+      display: block;      
+      padding-right: 15em; 
       margin-top: 1em;
-      margin-left: 13em;
+      margin-left: 10em;
       height: auto;
-      width: 90%;
+      width: 80%;
     }
 
     .menu {
-      display: block;
-      width: 100vh;
+      display: flex;
+      width: 100vw;
+       
     }
 
    .menu a {
       margin-left: 5em;
-      
+      padding-left: 2em;
+      padding-right: 2em; 
+      text-decoration-line: underline;      
     }
 
 
@@ -310,14 +289,16 @@
      clear: both;
     }
 
-    .flex-container {
+    .container {
       display: flex;
       flex-wrap: wrap;      
       align-items: flex-start;
       position: absolute;
+      background-color: darkslategray;
     }  
 
-    .flex-container > p {
+    .container > h3 {
+      margin-top: -2em;
       margin-left: 10px;
       margin-right: 5px;
     }
@@ -325,27 +306,20 @@
     #results-list {
       display: flex;
       align-items: start;
-      flex-wrap: wrap;
-      
-
+      flex-wrap: wrap;     
     }
 
     #results {
       display: flex;
       justify-content: start;
-      flex-flow: wrap;
-      
+      flex-flow: wrap;      
     }
 
     #public-results {
       display: flex;
       justify-content: start;
-      flex-flow: wrap;
-      
+      flex-flow: wrap;      
     }
-
-
-
   }
 
 
@@ -369,22 +343,25 @@
 
     .searchbar {      
       display: block;
-      padding-left: 5em;
-      padding-right: 25em; 
+      padding-left: 10em;
+      padding-right: 20em; 
       margin-top: 1em;
       margin-left: 13em;
       height: auto;
-      width: 90%;
+      width: 80%;
     }
 
     .menu {
       display: flex;
-      width: 100%;
+      width: 100vw;
     }
 
    .menu a {
       margin-left: 12em;
+      padding-left: 2em;
+      padding-right: 2em;
       max-width: 1500px;
+      text-decoration-line: underline;
     }
 
 
@@ -428,14 +405,15 @@
      clear: both;
     }
 
-    .flex-container {
+    .container {
       display: flex;
       flex-wrap: wrap;      
       align-items: flex-start;
       position: absolute;
     }  
 
-    .flex-container > p {
+    .container > p {
+      margin-top: -4em; 
       margin-left: 10px;
       margin-right: 5px;
     }
