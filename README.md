@@ -6,10 +6,10 @@ The cityCenter application enables users to locate any business or establishment
 
 Technologies used:
 
-HTML
-CSS
-JavaScript
-jQuery
+|HTML
+|CSS
+|JavaScript
+|jQuery
 
 Landing page
 
