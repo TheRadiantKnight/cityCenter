@@ -3,6 +3,7 @@
 https://theradiantknight.github.io/cityCenter/
 
 The cityCenter application enables users to locate any business or establishment in their surrounding areas. In order, to fully take advantage of cityCenter users must allow access to their location via the browser. The application is powered by the Here API which enables the user to query location by name or category.
+
 Technologies used:
 
 HTML
